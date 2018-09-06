@@ -4,13 +4,13 @@ Navicat MySQL Data Transfer
 Source Server         : localhost
 Source Server Version : 50717
 Source Host           : localhost:3306
-Source Database       : mybatisdemo
+Source Database       : mybatisdemo2
 
 Target Server Type    : MYSQL
 Target Server Version : 50717
 File Encoding         : 65001
 
-Date: 2018-09-06 18:03:35
+Date: 2018-09-06 18:03:41
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -30,7 +30,7 @@ CREATE TABLE `bounter` (
 -- ----------------------------
 -- Records of bounter
 -- ----------------------------
-INSERT INTO `bounter` VALUES ('1', '小明', '这是小明，数据库1', '20180906161706');
+INSERT INTO `bounter` VALUES ('1', '小红', '这是小红，数据库2', '20180906161729');
 
 -- ----------------------------
 -- Table structure for `class`
@@ -81,10 +81,10 @@ CREATE TABLE `student` (
 -- ----------------------------
 -- Records of student
 -- ----------------------------
-INSERT INTO `student` VALUES ('1', '点点', '16');
-INSERT INTO `student` VALUES ('2', '平平', '16');
-INSERT INTO `student` VALUES ('3', '美美', '16');
-INSERT INTO `student` VALUES ('4', '团团', '16');
+INSERT INTO `student` VALUES ('1', '点点2', '16');
+INSERT INTO `student` VALUES ('2', '平平2', '16');
+INSERT INTO `student` VALUES ('3', '美美2', '16');
+INSERT INTO `student` VALUES ('4', '团团2', '16');
 
 -- ----------------------------
 -- Table structure for `user`
@@ -100,7 +100,7 @@ CREATE TABLE `user` (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('1', 'tomcat', 'isthispassword');
+INSERT INTO `user` VALUES ('1', 'tomcat2', 'isthispassword2');
 
 -- ----------------------------
 -- Table structure for `users`
@@ -118,4 +118,4 @@ CREATE TABLE `users` (
 -- ----------------------------
 -- Records of users
 -- ----------------------------
-INSERT INTO `users` VALUES ('1', '小明', '123456', 'MAN', '小明昵称');
+INSERT INTO `users` VALUES ('1', '小红', '1234562', 'WOMAN', '小红昵称');
