@@ -24,7 +24,10 @@ public class Run {
             SqlSession session = sqlSessionFactory.openSession();
 
             StudentMapper mapper = session.getMapper(StudentMapper.class);
+
+
             Student student = mapper.selectOneById(1L);
+            Student student2 = mapper.selectOneById(1L);
 
             System.out.println(student.toString());
             //关闭session

@@ -57,7 +57,9 @@ public class StudentMapperTest {
         StudentMapper studentMapper = sqlSession.getMapper(StudentMapper.class);
 
         System.out.println(studentMapper.getStudentById(1));
+
         System.out.println("增加了" + studentMapper.addStudent(buildStudent()) + "个学生");
+
         System.out.println(studentMapper.getStudentById(1));
 
         sqlSession.close();
@@ -66,6 +68,7 @@ public class StudentMapperTest {
     /**
      *   <setting name="localCacheScope" value="SESSION"/>
      *   <setting name="cacheEnabled" value="true"/>
+     *   结果：2更新了，1还是读缓存
      * @throws Exception
      */
     @Test
@@ -78,7 +81,10 @@ public class StudentMapperTest {
 
         System.out.println("studentMapper读取数据: " + studentMapper.getStudentById(1));
         System.out.println("studentMapper读取数据: " + studentMapper.getStudentById(1));
+//
         System.out.println("studentMapper2更新了" + studentMapper2.updateStudentName("小岑",1) + "个学生的数据");
+//
+        //这里输出的结果是缓存的结果
         System.out.println("studentMapper读取数据: " + studentMapper.getStudentById(1));
         System.out.println("studentMapper2读取数据: " + studentMapper2.getStudentById(1));
 
@@ -96,6 +102,7 @@ public class StudentMapperTest {
      *  <setting name="localCacheScope" value="SESSION"/>
      *  <setting name="cacheEnabled" value="true"/>
      * @throws Exception
+     *
      */
     @Test
     public void testCacheWithoutCommitOrClose() throws Exception {
@@ -125,6 +132,7 @@ public class StudentMapperTest {
 
         System.out.println("studentMapper读取数据: " + studentMapper.getStudentById(1));
         sqlSession1.close();
+        //1的sqlsession提交了之后缓存中才有数据
         System.out.println("studentMapper2读取数据: " + studentMapper2.getStudentById(1));
 
     }
