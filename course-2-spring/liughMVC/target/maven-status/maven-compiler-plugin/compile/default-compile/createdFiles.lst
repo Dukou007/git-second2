@@ -1,5 +1,0 @@
-com\liugh\servlet\MyDispatcherServlet.class
-com\liugh\annotation\MyRequestMapping.class
-com\liugh\annotation\MyRequestParam.class
-com\liugh\annotation\MyController.class
-com\liugh\core\controller\TestController.class
