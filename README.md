@@ -22,3 +22,6 @@ mybatis缓存项目 --> mybatisCacheDemo
 拦截mapper接口方法实现多数据源 --> bounterMybatis
 
 mybatis plus项目 --> mybatisPlusDemo
+
+#### 课程四
+springboot的手动、自动装配 --> spring-boot-deep
