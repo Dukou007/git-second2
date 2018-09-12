@@ -27,4 +27,4 @@ mybatis plus项目 --> mybatisPlusDemo
 springboot的手动、自动装配 --> spring-boot-deep
 
 #### 课程五
-待上传~~
+lombok,集成mybatis-plus --> spring-boot-frame
