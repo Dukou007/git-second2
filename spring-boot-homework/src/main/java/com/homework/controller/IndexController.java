@@ -1,4 +1,4 @@
-package com.homework.springboothomework.controller;
+package com.homework.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -10,8 +10,7 @@ public class IndexController {
 
     @GetMapping("/")
     public String index() {
-        log.info("-------------------------------->");
+        log.info("-------------------------------->这是首页");
         return "index";
     }
-
 }
