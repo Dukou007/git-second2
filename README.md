@@ -28,3 +28,6 @@ springboot的手动、自动装配 --> spring-boot-deep
 
 #### 课程五
 lombok,集成mybatis-plus --> spring-boot-frame
+
+#### 课程六
+springboot集成redis，实现高可用 --> spring-demo-redis
