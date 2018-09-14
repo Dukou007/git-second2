@@ -12,26 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/homework/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpringBootFrameApplication.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/homework/SpringBootFrameApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -119,8 +100,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="307" />
-    <option name="y" value="42" />
+    <option name="x" value="224" />
+    <option name="y" value="41" />
     <option name="width" value="1562" />
     <option name="height" value="989" />
   </component>
@@ -130,7 +111,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,6 +223,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -425,6 +406,7 @@
       <workItem from="1536766721926" duration="1863000" />
       <workItem from="1536821224572" duration="3000" />
       <workItem from="1536821730164" duration="1378000" />
+      <workItem from="1536853090703" duration="74000" />
     </task>
     <servers />
   </component>
@@ -461,14 +443,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25415000" />
+    <option name="totallyTimeSpent" value="25489000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="307" y="42" width="1562" height="989" extended-state="0" />
-    <editor active="true" />
+    <frame x="224" y="41" width="1562" height="989" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.32976446" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="6" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
@@ -481,7 +461,7 @@
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Terminal" order="3" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.57486135" visible="true" weight="0.26498002" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.57486135" visible="true" weight="0.2683089" />
       <window_info anchor="right" id="Bean Validation" order="1" />
       <window_info id="Web" order="0" side_tool="true" />
       <window_info id="JRebel" order="2" side_tool="true" />
@@ -496,6 +476,7 @@
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.33832976" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.32976446" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,6 +491,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/homework/SpringBootFrameApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -782,7 +770,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/homework/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
