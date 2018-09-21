@@ -31,3 +31,11 @@ lombok,集成mybatis-plus --> spring-boot-frame
 
 #### 课程六
 springboot集成redis，实现高可用 --> spring-demo-redis
+
+#### 课程七
+springboot集成swagger2 --> course-7-swagger
+
+#### 课程九
+动态数据源简单例子 --> course-9-datatSource
+
+
