@@ -38,4 +38,5 @@ springboot集成swagger2 --> course-7-swagger
 #### 课程九
 动态数据源简单例子 --> course-9-datatSource
 
-
+#### 课程十
+spring jpa例子、代理模式 --> course-10-springjpa
