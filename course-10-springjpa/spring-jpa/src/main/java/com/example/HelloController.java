@@ -21,6 +21,7 @@ public class HelloController {
 
     @GetMapping("/1")
     public Object test1() {
+
         return studentRepository.findByOrderByIdDesc();
     }
 
@@ -64,7 +65,7 @@ public class HelloController {
             public Predicate toPredicate(Root<Student> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
                 Path path = root.get("name");
 
-                return criteriaBuilder.equal(path, "tom");
+                return criteriaBuilder.equal(path, "一明");
             }
         };
 
