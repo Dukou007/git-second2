@@ -10,6 +10,10 @@ import javax.websocket.Session;
 import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
 
+/**
+ * 声明websocket地址类似Spring MVC中的@controller注解类似，
+ * websocket使用@ServerEndpoint来进行声明接口
+ */
 @ServerEndpoint(value = "/websocket/{user}")  
 public class MyServerEndpoint {  
       
@@ -33,7 +37,7 @@ public class MyServerEndpoint {
     }  
       
     @OnMessage  
-    public void inMessage(Session session, String message) throws IOException {
+    public void onMessage(Session session, String message) throws IOException {
         sysLogger.info("received ***** WebSocket Received from sessionId " + session.getId() + ": " + message);
 
         //给当前用户发送信息
@@ -50,6 +54,8 @@ public class MyServerEndpoint {
     @OnClose  
     public void end(Session session) {
         sysLogger.info("closed XXXXX WebSocket closed from sessionId " + session.getId());
+
+        userSessions.remove(session);
     }  
       
   
