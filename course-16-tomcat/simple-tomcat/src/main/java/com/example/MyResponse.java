@@ -25,6 +25,9 @@ public class MyResponse {
                 .append(content)
                 .append("</body></html>");
 
+        System.out.println("返回信息--------->" + httpResponse.toString());
+        System.out.println();
+
         outputStream.write(httpResponse.toString().getBytes());
         outputStream.close();
 

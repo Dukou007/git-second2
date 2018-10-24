@@ -31,10 +31,11 @@ public class MyTomcat {
             System.out.println("myTomcat is start ...");
 
             while (true) {
-                Socket socket = serverSocket.accept();
+                Socket socket = serverSocket.accept();//accept最大数量问题
                 InputStream inputStream = socket.getInputStream();
                 OutputStream outputStream = socket.getOutputStream();
 
+                //HttpServletRequest
                 MyRequest request = new MyRequest(inputStream);
                 MyResponse response = new MyResponse(outputStream);
 
@@ -77,6 +78,11 @@ public class MyTomcat {
 
         //通过反射方式运行servlet代码
         try {
+            if(clazz == null) {
+                System.out.println(request.getUrl() + "----------->请求链接不存在！！");
+                return;
+            }
+
             Class<MyServlet> myServletClass = (Class<MyServlet>) Class.forName(clazz);
             MyServlet myServlet = myServletClass.newInstance();
 

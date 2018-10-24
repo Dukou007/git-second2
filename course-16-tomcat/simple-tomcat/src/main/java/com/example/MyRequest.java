@@ -20,13 +20,15 @@ public class MyRequest {
             httpRequest = new String(httpRequestBytes, 0, length);
         }
 
+        System.out.println(httpRequest);
+
         // 对HTTP协议进行解析
         // 从请求头获取方法和url
         String httpHead = httpRequest.split("\n")[0];
         url = httpHead.split("\\s")[1];
         method = httpHead.split("\\s")[0];
 
-
+        System.out.println();
         System.out.println("请求信息------>" + this.toString());
     }
 
