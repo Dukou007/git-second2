@@ -1,0 +1,12 @@
+@startuml
+
+IndexSearcher -> IndexReader: 初始化查询类
+
+IndexReader -> DirectoryReader: 初始化索引库位置
+DirectoryReader -> Directory: 索引库
+Directory -> Directory: FSDirectory.open（path）打开索引的存储位置
+IndexSearcher <-- IndexReader: 初始化查询类完成
+
+
+
+@enduml

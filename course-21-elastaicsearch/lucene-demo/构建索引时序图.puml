@@ -1,0 +1,17 @@
+@startuml
+
+IndexWriter -> Directory:初始化索引库位置
+Directory -> Directory: FSDirectory.open（path）打开索引的存储位置
+
+IndexWriter -> IndexWriterConfig: 配置索引建立信息（分词器、lucene版本等）
+IndexWriterConfig -> Analyzer: 指定分词器
+Analyzer -> Analyzer: 使用StandardAnalyzer分词器
+IndexWriterConfig <-- Analyzer
+
+IndexWriter -> Documents: 添加要建立索引的文档列表
+Documents -> Document:
+Document -> Document: 创建文档，并指定Field
+IndexWriter <-- Documents
+IndexWriter -> IndexWriter: updateDocuments()更新或创建索引库
+IndexWriter -> IndexWriter: close()
+@enduml
