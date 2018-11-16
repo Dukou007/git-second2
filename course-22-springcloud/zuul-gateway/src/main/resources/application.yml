@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:pass@localhost:8761/eureka/
+# 路由规则配置
+zuul:
+  routes:
+    api-order:
+      path: /uapi/**
+      serviceId: user

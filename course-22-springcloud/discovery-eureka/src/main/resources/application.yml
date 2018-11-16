@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: eureka-server-1
+  security:
+    user:
+      name: admin
+      password: pass
+eureka:
+  client:
+    # 表示是否将自己注册到Eureka Servcer。
+    register-with-eureka: false
+    # 表示是否从Eureka Server获取注册信息
+    fetch-registry: false
+    # 设置Eureka Server交互的地址
+    service-url:
+      defaultZone: http://admin:pass@localhost:8761/eureka/
